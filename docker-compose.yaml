@@ -38,10 +38,9 @@ services:
    - catalogue
   mysql:
    image: mysql:v1
-   container_name: mysql
-   depends_on:
+   container_name: mysql   
   shipping:
    image: shipping:v1
    container_name: shipping
    depends_on:
-   - mysql   
+   - mysql  
